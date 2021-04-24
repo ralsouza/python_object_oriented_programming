@@ -1,5 +1,6 @@
 # Python Object-Oriented Programming
 
+# Class Creation
 class Employee:
     """My employee class."""
 
@@ -13,7 +14,7 @@ class Employee:
     def full_name(self):
         return "{} {}".format(self.first, self.last)
 
-# The painful way
+# Class Instantiation
 emp1 = Employee(first = "Rafael", last = "Lima", pay = 50000)
 emp2 = Employee(first = "Test"  , last = "User", pay = 700000)
 
