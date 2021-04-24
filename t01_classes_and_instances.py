@@ -14,9 +14,10 @@ class Employee:
     def full_name(self):
         return "{} {}".format(self.first, self.last)
 
+
 # Class Instantiation
-emp1 = Employee(first = "Rafael", last = "Lima", pay = 50000)
-emp2 = Employee(first = "Test"  , last = "User", pay = 700000)
+emp1 = Employee(first="Rafael", last="Lima", pay=50000)
+emp2 = Employee(first="Test", last="User", pay=700000)
 
 # Get e-mail addresses
 print(emp1.email)
