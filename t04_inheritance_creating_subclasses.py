@@ -53,17 +53,17 @@ dev2 = Developer(first="Test", last="User", pay=700000, prog_lang="Java")
 
 mgr_1 = Manager("Sue", "Smith", 120000, [dev1])
 
-print(mgr_1.email)
-mgr_1.print_emps()
+# print(mgr_1.email)
+# mgr_1.print_emps()
 
-print("---- Adding dev2 ----")
+# print("---- Adding dev2 ----")
 
-mgr_1.add_emp(dev2)
-mgr_1.print_emps()
+# mgr_1.add_emp(dev2)
+# mgr_1.print_emps()
 
-print("---- Removing dev1 ----")
-mgr_1.remove_emp(dev1)
-mgr_1.print_emps()
+# print("---- Removing dev1 ----")
+# mgr_1.remove_emp(dev1)
+# mgr_1.print_emps()
 
 # print(dev1.email)
 # print(dev1.prog_lang)
@@ -71,3 +71,15 @@ mgr_1.print_emps()
 # print(dev1.pay)
 # dev1.apply_raise()
 # print(dev1.pay)
+
+# isinstance()
+print("--> Is mgr_1 a instance of Manager class?")
+print(isinstance(mgr_1, Manager))
+print(isinstance(mgr_1, Employee))
+print(isinstance(mgr_1, Developer))
+
+# issubclass()
+print("--> Is Developer a subclass of Employee?")
+print(issubclass(Developer, Employee))
+print(issubclass(Manager, Employee))
+print(issubclass(Manager, Developer))
